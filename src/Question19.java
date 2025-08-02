@@ -1,0 +1,19 @@
+//19)Write a Java method to check whether a string is a valid password.
+//Password rules:
+//A password must have at least ten characters.
+//A password consists of only letters and digits.
+//A password must contain at least two digits.
+//xpected Output:
+//1. A password must have at least ten characters.
+//2. A password consists of only letters and digits.
+//3. A password must contain at least two digits
+//Input a password (You are agreeing to the above Terms and Conditions.): abcd1234xyz
+//Password is valid: abcd1234xyz
+public class Question19 {
+    public static void main(String[] args) {
+
+    }
+    public static void isValidPassword() {
+
+    }
+}
