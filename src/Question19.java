@@ -14,6 +14,9 @@ public class Question19 {
 
     }
     public static void isValidPassword() {
-
+        String password = "abcd1234xyz";
+        if (password.length() < 10  ) {
+            ;
+        }
     }
 }

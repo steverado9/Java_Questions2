@@ -13,15 +13,29 @@
 //Your speed in miles/h is 0.26158804
 public class Question18 {
     public static void main(String[] args) {
+        speedInMeterPerSeconds(2500, 5);
+        speedInKiloMeterPerHour(2500, 5);
+        speedInMilesPerHour(2500, 5);
 
     }
-    public static void seconds() {
-
+    public static void speedInMeterPerSeconds(double distanceInMeters, double Hours) {
+        double timeInSeconds = 60 * 60 * Hours;
+        double speed =  (distanceInMeters / timeInSeconds);
+      System.out.println(speed);
     }
-    public static void minutes() {
 
-    }
-    public static void hours() {
+    public static void speedInKiloMeterPerHour(double distanceInMeters, double Hours) {
+        double kiloMeter = distanceInMeters/1000;
 
+        double speed = kiloMeter / Hours;
+        System.out.println(speed);
     }
+
+    public static void speedInMilesPerHour(double distanceInKiloMeters, double Hours) {
+        double Mile = distanceInKiloMeters/1609;
+        double speed = Mile / Hours;
+        System.out.println(speed);
+    }
+
+
 }

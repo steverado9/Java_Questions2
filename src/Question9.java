@@ -3,9 +3,15 @@ Input: str= "Geeks"
 Output: "skeeG"*/
 public class Question9 {
     public static void main(String[] args) {
-
+        reverseString();
     }
     public static void reverseString() {
-
+        String myString = "Geeks";
+        char[] charArray = myString.toCharArray();
+        String reversedString = "";
+        for (int i = myString.length() - 1; i >= 0; i--) {
+            reversedString+= charArray[i];
+        }
+        System.out.println(reversedString);
     }
 }
