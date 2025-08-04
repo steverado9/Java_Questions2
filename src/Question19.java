@@ -11,12 +11,28 @@
 //Password is valid: abcd1234xyz
 public class Question19 {
     public static void main(String[] args) {
-
+        isValidPassword("abcd1234xyz");
     }
-    public static void isValidPassword() {
-        String password = "abcd1234xyz";
-        if (password.length() < 10  ) {
-            ;
+    public static void isValidPassword(String password) {
+
+        boolean hasLetter = false;
+        boolean hasDigit = false;
+        int digitCount = 0;
+        for (char eachChar : password.toCharArray()) {
+            if (Character.isDigit(eachChar)) {
+                digitCount++;
+                if (digitCount >= 2) {
+                    hasDigit = true;
+                }
+            }
+            if (Character.isLetter(eachChar)) {
+                hasLetter = true;
+            }
+        }
+        if (password.length() >= 10 && hasLetter && hasDigit ) {
+            System.out.println("This is a valid password");
+        } else {
+            System.out.println("Invalid password");
         }
     }
 }
